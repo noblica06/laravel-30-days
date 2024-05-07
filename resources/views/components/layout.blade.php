@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello from the about page!</h1>
+    <nav>
+        <x-nav-link href="/">Home</x-nav-link>
+        <x-nav-link href="/about">about</x-nav-link>
+        <x-nav-link href="/contact">contact</x-nav-link>
+    </nav>
+    
+    {{ $slot }}
 </body>
 </html>
