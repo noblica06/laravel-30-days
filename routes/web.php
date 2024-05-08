@@ -7,8 +7,6 @@ use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\SessionController;
 
-
-
 Route::view('/','home');
 Route::view('/contact', 'contact');
 
@@ -20,7 +18,7 @@ Route::get('/jobs/{job}/edit',[JobController::class,'edit'])->middleware(['auth'
 Route::patch('/jobs/{job}',[JobController::class,'update']);
 Route::delete('/jobs/{job}',[JobController::class,'destroy']);
 
-   
+
 Route::get('/register',[RegisteredUserController::class, 'create']);
 Route::post('/register',[RegisteredUserController::class, 'store']);
 
